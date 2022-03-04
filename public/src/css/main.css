@@ -210,11 +210,17 @@ main {
 
 .location-transports > div {
     flex-basis: calc(50% - 20px);
-    margin: 26px 0 0;
+    margin: 0px 0 20px;
+}
+
+.location-transports > div:nth-of-type(1),
+.location-transports > div:nth-of-type(2) {
+    flex-basis: calc(50% - 20px);
+    margin: 0px 0 50px;
 }
 
 .location-transports > .transport-100 {
-    flex-basis: calc(100%);
+    flex-basis: calc(100%) !important;
 }
 
 .transport {
@@ -230,7 +236,7 @@ main {
 .transport img {
     position: relative;
     width: 80px;
-    margin-top: -70px;
+    margin-top: -60px;
 }
 
 .transport h4 {
