@@ -27,15 +27,15 @@
                                     width="330"
                                     height="240"
                                     frameborder="0" style="border:0"
-                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyB2ZMZGfJHnHzleAj7VNCorfZrydBrjmqU&origin=New+York,+NY,+USA&destination=+Parc+Jean-Drapeau,+Montréal" allowfullscreen>
+                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyB2ZMZGfJHnHzleAj7VNCorfZrydBrjmqU&origin=London,+UK&destination=+Parc+Jean-Drapeau,+Montréal&mode=flying" allowfullscreen>
                                 </iframe>
                                 <div class="map-information">
                                     <div>
-                                        <p class="from"><img src="src/img/icon-from.png" alt="from"> New York, US</p>
+                                        <p class="from"><img src="src/img/icon-from.png" alt="from"> London, UK</p>
                                         <p class="to"><img src="src/img/icon-to.png" alt="to">Montreal, QC</p>
                                     </div>
                                     <p class="distance">
-                                        373 miles
+                                        3,242 miles
                                     </p>
                                 </div>
                             </div>
@@ -45,46 +45,16 @@
                                 <p><i>Will you travel by ?</i></p>
                             </div>
 
-                            <div class="location-transports">
-                                <div class="transport">
-                                    <a href="summary-bus.html">
-                                        <img src="src/img/bus.png" alt="Bus icon">
-                                        <h4>Bus</h4>
-                                        <span>Total Emission</span>
-                                        <p class="co2">211Kg CO2</p>
-                                        <p class="points">+ 30 points</p>
-                                    </a>
-                                </div>
-                                <div class="transport">
-                                    <a href="summary-train.html">
-                                        <img src="src/img/train.png" alt="Train icon">
-                                        <h4>Train</h4>
-                                        <span>Total Emission</span>
-                                        <p class="co2">211Kg CO2</p>
-                                        <p class="points">+ 30 points</p>
-                                    </a>
-                                </div>
-                                
-                                <div class="transport">
-                                    <a href="summary-car.html">
-                                        <img src="src/img/car.png" alt="Car icon">
-                                        <h4>Car</h4>
-                                        <span>Total Emission</span>
-                                        <p class="co2">120Kg CO2</p>
-                                        <p class="points">+ 20 points</p>
-                                    </a>
-                                </div>
-                               
-                                <div class="transport">
+                            <div class="location-transports">   
+                                <div class="transport transport-100">
                                     <a href="summary-plane.html">
                                         <img src="src/img/plane.png" alt="Plane icon">
                                         <h4>Plane</h4>
                                         <span>Total Emission</span>
-                                        <p class="co2">55.29Kg CO2</p>
+                                        <p class="co2">298.26Kg CO2</p>
                                         <p class="points">+ 10 points</p>
                                     </a>
                                 </div>
-
                             </div>
                         </main>
                     </div>
@@ -124,14 +94,10 @@
         </div>
     </div>
     <script>
-        var popup = localStorage.getItem("popup");
-        if (popup == "open") {
-            hidePopUp();
-        }
         function hidePopUp(){
             var popup = document.getElementById("popup");
             popup.classList.add("hide")
-            localStorage.setItem("popup", "open");
+            console.log("hide")
         }
     </script>
 </body>

@@ -13,5 +13,8 @@
     "concurrently": "^7.0.0",
     "lite-server": "^2.6.1",
     "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "firebase-tools": "^10.2.2"
   }
 }
