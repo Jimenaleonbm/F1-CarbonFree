@@ -237,7 +237,7 @@ main {
 
 /*footprint*/
 .white-container {
-    padding: 15px 20px;
+    padding: 25px 20px;
     border-radius: 20px;
     background-color: white;
 }
@@ -248,7 +248,7 @@ main {
 .progress h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .progress p {
@@ -256,8 +256,8 @@ main {
     font-size: 16px;
 }
 .progress img{
-    width: 180px;
-    margin: 10px  auto;
+    width: 250px;
+    margin: 20px  auto;
 }   
 
 /*Map*/
@@ -349,6 +349,53 @@ button {
     padding: 0 30px 0 0 ;
 }
 
+.rewards{
+    list-style: none;
+    display: block;
+    height: calc(80vh - 50px);
+    overflow: scroll;
+}
+
+.rewards li{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.rewards li b{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -2px;
+    display: block;
+    color: rgb(44, 44, 44);
+}
+
+.rewards li img{
+    width: 75px;
+}
+
+.rewards li > div {
+    width: 40%;
+}
+.orange-button-outline {
+    border: 2px solid #f89e3d;
+    color: #f89e3d;
+    padding: 5px 9px;
+    margin: 7px 3px 0;
+    display: block;
+    border-radius: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .3s all ease;
+    background-color: white;
+}
+
 @media screen and (min-width: 767px){
     .bg-home {
         min-height: 100vh;
@@ -409,4 +456,26 @@ button {
     .transport:hover {
         box-shadow: 0 5px 5px #cccccc;
     }
+    /*footprint*/
+    .white-container {
+        padding: 15px 20px;
+    }
+
+    .progress h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .progress p {
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    .progress img{
+        width: 180px;
+        margin: 10px  auto;
+    }  
+    .rewards {
+        height: calc(80vh - 160px);
+    } 
 }
