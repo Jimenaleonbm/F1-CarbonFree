@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>Formula 1 - Carbon Zero</title>
+</head>
+<body>
+    <div class="bg-home">
+        <div class="left">
+            <h1>S|I|G|M|A</h1>
+            <h2>SET: International Travelers Carbon footprint reduction and credit management</h2>
+        </div>
+        <div class="right">
+            <div class="container-right bg-app">
+                <div>
+                    <div class="bg-white-app">
+                        <header>
+                            <button class="menu"><img src="src/img/menu.png" alt="menu icon"></button>
+                            <h2>Welcome</h2>
+                        </header>
+                        <main>
+                            <div class="location-map">
+                                <iframe
+                                    width="330"
+                                    height="240"
+                                    frameborder="0" style="border:0"
+                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyB2ZMZGfJHnHzleAj7VNCorfZrydBrjmqU&origin=New+York,+NY,+USA&destination=+Parc+Jean-Drapeau,+Montréal" allowfullscreen>
+                                </iframe>
+                                <div class="map-information">
+                                    <div>
+                                        <p class="from"><img src="src/img/icon-from.png" alt="from"> New York, US</p>
+                                        <p class="to"><img src="src/img/icon-to.png" alt="to">Montreal, QC</p>
+                                    </div>
+                                    <p class="distance">
+                                        373 miles
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="plan-route">
+                                <p><b>PLAN YOUR ROUTE</b></p>
+                                <p><i>Will you travel by ?</i></p>
+                            </div>
+
+                            <div class="location-transports">
+                                <div class="transport">
+                                    <a href="summary-bus.html">
+                                        <img src="src/img/bus.png" alt="Bus icon">
+                                        <h4>Bus</h4>
+                                        <span>Save</span>
+                                        <p class="co2">211Kg CO2</p>
+                                        <p class="points">+ 30 points</p>
+                                    </a>
+                                </div>
+                                <div class="transport">
+                                    <a href="summary-train.html">
+                                        <img src="src/img/train.png" alt="Train icon">
+                                        <h4>Train</h4>
+                                        <span>Save</span>
+                                        <p class="co2">211Kg CO2</p>
+                                        <p class="points">+ 30 points</p>
+                                    </a>
+                                </div>
+                                
+                                <div class="transport">
+                                    <a href="summary-car.html">
+                                        <img src="src/img/car.png" alt="Car icon">
+                                        <h4>Car</h4>
+                                        <span>Save</span>
+                                        <p class="co2">120Kg CO2</p>
+                                        <p class="points">+ 20 points</p>
+                                    </a>
+                                </div>
+                               
+                                <div class="transport">
+                                    <a href="summary-plane.html">
+                                        <img src="src/img/plane.png" alt="Plane icon">
+                                        <h4>Plane</h4>
+                                        <span>Save</span>
+                                        <p class="co2">55.29Kg CO2</p>
+                                        <p class="points">+ 10 points</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </main>
+                    </div>
+                    <footer class="bg-green-app">
+                        <ul>
+                            <a href="location.html">
+                                <li class="active">
+                                    <img src="src/img/route.png" alt="Route icon">
+                                    Route
+                                </li>
+                            </a>
+                            <a href="congratulations.html">
+                                <li>
+                                    <img src="src/img/foot.png" alt="Foot icon">
+                                    My footprint
+                                </li>
+                            </a>
+                            <a href="rewards.html">
+                                <li>
+                                    <img src="src/img/rewards.png" alt="Rewards icon">
+                                    Rewards
+                                </li>
+                            </a>
+                        </ul>
+                    </footer>
+                    <!-- Location -->
+                    <div class="popup" id="popup">
+                        <p><b>Terms of user agreement for Web-site: </b></p>
+                        <p>
+                            F1 Carbon Zero needs to know your location to work correctly.If you don’t want to allow access to your location, press cancel. 
+                        </p>
+                        <button class="orange-button" onclick="hidePopUp()">Accept</button>
+                        <button class="orange-text-button" onclick="hidePopUp()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function hidePopUp(){
+            var popup = document.getElementById("popup");
+            popup.classList.add("hide")
+            console.log("hide")
+        }
+    </script>
+</body>
+</html>

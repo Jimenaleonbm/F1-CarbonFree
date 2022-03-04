@@ -1,0 +1,17 @@
+{
+  "name": "carbonzerojs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "lite-server --baseDir=\"public\"",
+    "start": "npm run server"
+  },
+  "author": "Jimena Martin",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "lite-server": "^2.6.1",
+    "sass": "^1.49.0"
+  }
+}
